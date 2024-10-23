@@ -8,13 +8,16 @@ set(EMSCRIPTEN_FLAGS
     -sLINKABLE=1 
     -sEXPORT_ALL=1 
     -sFORCE_FILESYSTEM=1 
+    --bind 
+    -lidbfs.js
+    -sWASM=1
 )
 
 add_executable(FilesApp Files.c)
-
 set_target_properties(FilesApp PROPERTIES 
-    OUTPUT_NAME "Files"
-    SUFFIX ".wasm"
+    OUTPUT_NAME "Files" 
+    SUFFIX ".js"
 )
 
 target_link_options(FilesApp PRIVATE ${EMSCRIPTEN_FLAGS})
+
