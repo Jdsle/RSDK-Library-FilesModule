@@ -1,1 +1,0 @@
-C:\Users\jd1ex\AppData\Local\emsdk\upstream\emscripten\emcc.bat -sLINKABLE=1 -sEXPORT_ALL=1 -sFORCE_FILESYSTEM=1 @CMakeFiles\FilesApp.dir\objects1.rsp -o Files.wasm
