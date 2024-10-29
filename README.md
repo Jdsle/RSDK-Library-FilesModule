@@ -7,5 +7,5 @@ This compiles an empty Files.c - this will allow us to load the .wasm module, an
 ### Building
 ```
 emcmake cmake -B build
-cmake -B build
+cmake --build build
 ```
